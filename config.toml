@@ -1,0 +1,82 @@
+baseurl      = "http://fisher.sh"
+title        = "Linton Fisher"
+languageCode = "en-gb"
+theme        = "hello-friend-ng"
+
+paginate = 10
+rssLimit = 10
+
+[author]
+  name = "Linton Fisher"
+
+[params]
+  dateform        = "2 Jan 2006"
+  dateformShort   = "2 Jan"
+  dateformNum     = "02-01-2006"
+  dateformNumTime = "02-01-2006 15:04"
+
+  homeSubtitle = "Platform Engineer"
+
+  disableReadOtherPosts    = false
+  enableThemeToggle        = true
+  enableSharingButtons     = true
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document's head
+  description = "Linton Fisher's personal portfolio and blog."
+  keywords = "DevOps, Platform, Engineer, Portfolio, Blog, Scotland, Cloud, AWS, Terraform, IaC, HashiCorp"
+  images = [""]
+
+  [params.footer]
+    trademark = false
+    rss       = true
+    copyright = true
+    author    = true
+
+    bottomText = [
+      "Powered by <a href=\"https://gohugo.io\">Hugo</a>"
+    ]
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://linkedin.com/in/lintonfisher"
+  
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/lima-foxtrot"
+  
+  [params.portrait]
+    path     = "/img/portrait.png"
+    alt      = "Portrait"
+    maxWidth = "150px"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Linton Fisher"
+    subtitle = "Platform Engineer"
+    keywords = "DevOps, Platform, Engineer, Portfolio, Blog, Scotland, Cloud, AWS, Terraform, IaC, HashiCorp"
+    copyright = 'Copyright &copy; 2023'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "Linton Fisher"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
